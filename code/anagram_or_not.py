@@ -4,10 +4,8 @@
 def is_anagram(word1, word2):
     if any((len(word1) != len(word2),
             len(word1) == 0,
-            len(word2) == 0)):
-        return False
-
-    if any((c not in word2 for c in word1)):
+            len(word2) == 0,
+            sorted(word1) != sorted(word2)]):
         return False
 
     return True

@@ -8,6 +8,7 @@ If you're finding yourself curious you may consider picking an item from the lis
 * [anagram_or_not](#anagram_or_not)
 * [hash_me_poorly](#hash_me_poorly)
 * [is_there_a_pair](#is_there_a_pair)
+* [show_me_these_primes](#show_me_these_primes)
 * [reverse_text_not_tags](#reverse_text_not_tags)
 * [textify_that_list](#textify_that_list)
 
@@ -62,6 +63,58 @@ Array of 1024 elements (values 0..1023), sum to search for: 2045
 Found: 1 pairs
 Array of 1024 elements (values 0..1023), sum to search for: 2046
 Found: 0 pairs
+```
+
+## [show_me_these_primes](code/show_me_these_primes.py)
+
+Some useful priming. (*useful* as in contrast to say the kind described by Daniel Kahneman in his talk [on Studies on Priming People to The Idea of Money](https://www.youtube.com/watch?v=Oj66YRuSe8Y))
+
+```
+$ code/show_me_these_primes.py
+is n a prime?
+-1: False
+0: False
+1: False
+2: True
+3: True
+4: False
+5: True
+6: False
+7: True
+8: False
+9: False
+10: False
+11: True
+12: False
+13: True
+14: False
+15: False
+number of prime numbers smaller or equal n:
+-1: 0
+0: 0
+1: 0
+2: 1
+3: 2
+4: 2
+5: 3
+6: 3
+7: 4
+8: 4
+9: 4
+10: 4
+11: 5
+12: 5
+13: 6
+14: 6
+15: 6
+next prime:
+1: 2
+2: 3
+3: 5
+4: 5
+5: 7
+6: 7
+7: 11
 ```
 
 ## [reverse_text_not_tags](code/reverse_text_not_tags.py)

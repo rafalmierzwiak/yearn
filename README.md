@@ -20,6 +20,7 @@ If you're finding yourself curious you may consider picking an item from the lis
 * [segmentise_that_sentence](#segmentise_that_sentence)
 * [textify_that_list](#textify_that_list)
 * [serve_and_track](#serve_and_track)
+* [tictactoe](#tictactoe)
 * [whos_there](#whos_there)
 
 <!-- vim-markdown-toc -->
@@ -283,6 +284,53 @@ $ ./serve_and_track.sh
 ```
 $ curl 127.0.0.1:8080/ping
 OK
+```
+
+## [tictactoe](code/tictactoe.py)
+
+Self indulging `tictactoe` machine following simple rules:
+
+  * during first turn take advantage of wise man's opening, that is if gods of randomness are in your favour
+  * watch your diagonals, your rows and your columns
+  * if only possible... close on your opponent
+  * if no decissive moves in sight... look instead for weak points of yours as defence is paramount
+  * if safe... remember to attack when opportunity presents itself
+  * in all other cases... play at will, again may the gods of randomness be with you!..
+
+```
+Turn 1...
+DEBUG: turn=1, player=X, action=opening, row=1, column=1
+- - -
+- X -
+- - -
+DEBUG: turn=1, player=O, action=random, row=2, column=1
+- - -
+- X -
+- O -
+Turn 2...
+DEBUG: turn=2, player=X, action=row attack, row=1, column=0
+- - -
+X X -
+- O -
+DEBUG: turn=2, player=O, action=row defense, row=1, column=2
+- - -
+X X O
+- O -
+Turn 3...
+DEBUG: turn=3, player=X, action=column attack, row=0, column=0
+X - -
+X X O
+- O -
+DEBUG: turn=3, player=O, action=diag defense, row=2, column=2
+X - -
+X X O
+- O O
+Turn 4...
+DEBUG: turn=4, player=X, action=row defense, row=2, column=0
+X - -
+X X O
+X O O
+Player X wins!..
 ```
 
 ## [whos_there](code/whos_there.py)

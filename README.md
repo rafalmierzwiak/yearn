@@ -11,6 +11,7 @@ If you're finding yourself curious you may consider picking an item from the lis
 * [is_there_a_pair](#is_there_a_pair)
 * [show_me_these_primes](#show_me_these_primes)
 * [reverse_text_not_tags](#reverse_text_not_tags)
+* [segmentise_that_sentence](#segmentise_that_sentence)
 * [textify_that_list](#textify_that_list)
 * [serve_and_track](#serve_and_track)
 * [whos_there](#whos_there)
@@ -178,6 +179,18 @@ Text reversed not tags: !em esreveR
 Text: <html><head></head><body><h1>Reverse me!</h1></body></html>
 Text reversed: >lmth/<>ydob/<>1h/<!em esreveR>1h<>ydob<>daeh/<>daeh<>lmth<
 Text reversed not tags: <html><head></head><body><h1>!em esreveR</h1></body></html>
+```
+
+## [segmentise_that_sentence](code/segmentise_that_sentence.py)
+
+Stomped upon this [little great essay](http://thenoisychannel.com/2011/08/08/retiring-a-great-interview-problem).
+
+Thought for a moment and came up with a hackety quick and dirty piece of code. As a bonus comes translation table allowing to tune the translation process to one's taste.
+
+```
+$ sentence="Given an input string and a dictionary of words, segment the input string into a space-separated sequence of dictionary words if possible. For example, if the input string is 'applepie' and dictionary contains a standard set of English words, then we would return the string 'apple pie' as output."
+$ code/segmentise_that_sentence.py "${sentence// /}" "${sentence}"
+Given an input string and a dictionary of words, segment the input string into a space-separated sequence of dictionary words if possible. For example, if the input string is 'applepie' and dictionary contains a standard set of English words, then we would return the string 'apple pie' as output.
 ```
 
 ## [textify_that_list](code/textify_that_list.py)

@@ -12,6 +12,7 @@ If you're finding yourself curious you may consider picking an item from the lis
 * [compare_versions](#compare_versions)
 * [fizzbuzz](#fizzbuzz)
 * [is_there_a_pair](#is_there_a_pair)
+* [longest_lines](#longest_lines)
 * [show_me_these_primes](#show_me_these_primes)
 * [trailing_string](#trailing_string)
 * [reverse_text_not_tags](#reverse_text_not_tags)
@@ -144,6 +145,12 @@ Found: 1 pairs
 Array of 1024 elements (values 0..1023), sum to search for: 2046
 Found: 0 pairs
 ```
+
+
+## [longest_lines](code/longest_lines)
+
+Mirror, mirror, on the wall, who's the longest of them all?
+
 
 ## [show_me_these_primes](code/show_me_these_primes.py)
 

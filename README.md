@@ -6,31 +6,31 @@ If you're finding yourself curious you may consider picking an item from the lis
 
 <!-- vim-markdown-toc GFM -->
 
-* [array_absurdity](#array_absurdity)
-* [anagram_or_not](#anagram_or_not)
-* [double_squares](#double_squares)
-* [hash_me_poorly](#hash_me_poorly)
-* [compare_versions](#compare_versions)
-* [fizzbuzz](#fizzbuzz)
-* [is_there_a_pair](#is_there_a_pair)
-* [longest_lines](#longest_lines)
-* [show_me_these_primes](#show_me_these_primes)
-* [trailing_string](#trailing_string)
-* [reverse_text_not_tags](#reverse_text_not_tags)
-* [segmentise_that_sentence](#segmentise_that_sentence)
-* [textify_that_list](#textify_that_list)
-* [serve_and_track](#serve_and_track)
-* [tictactoe](#tictactoe)
-* [whos_there](#whos_there)
+* [array_absurdity](#codearray_absurdity)
+* [anagram_or_not](#codeanagram_or_not)
+* [double_squares](#codedouble_squares)
+* [hash_me_poorly](#codehash_me_poorly)
+* [compare_versions](#codecompare_versions)
+* [fizzbuzz](#codefizzbuzz)
+* [is_there_a_pair](#codeis_there_a_pair)
+* [longest_lines](#codelongest_lines)
+* [show_me_these_primes](#codeshow_me_these_primes)
+* [trailing_string](#codetrailing_string)
+* [reverse_text_not_tags](#codereverse_text_not_tags)
+* [segmentise_that_sentence](#codesegmentise_that_sentence)
+* [textify_that_list](#codetextify_that_list)
+* [serve_and_track](#codeserve_and_track)
+* [tictactoe](#codetictactoe)
+* [whos_there](#codewhos_there)
 
 <!-- vim-markdown-toc -->
 
-## [array_absurdity](code/array_absurdity)
+## [code/array_absurdity](code/array_absurdity)
 
 A doppelganger?.. Seriously?
 
 
-## [anagram_or_not](code/anagram_or_not.py)
+## [code/anagram_or_not](code/anagram_or_not.py)
 
 Anagram or not?.. that's the question!
 
@@ -44,12 +44,12 @@ Is 'abcde' anagram of 'edcba'? Yes!
 Is 'edcba' anagram of 'abcde'? Yes!
 ```
 
-## [double_squares](code/double_squares)
+## [code/double_squares](code/double_squares)
 
 Given X, determine the number of ways in which it can be written as the sum of two squares.
 
 
-## [hash_me_poorly](code/hash_me_poorly.py)
+## [code/hash_me_poorly](code/hash_me_poorly.py)
 
 Show me that hash, will ya?..
 
@@ -63,7 +63,7 @@ Item 1023 is 1023
 ```
 
 
-## [compare_versions](code/compare_versions.py)
+## [code/compare_versions](code/compare_versions.py)
 
 Compare two version numbers version1 and version2:
 
@@ -106,7 +106,7 @@ $ ./compare_versions.py --operator eq 1.0 1.0 && echo "exact version installed" 
 exact version installed
 ```
 
-## [fizzbuzz](code/fizzbuzz.py)
+## [code/fizzbuzz](code/fizzbuzz.py)
 
 Oh boy. This. Really?.. Couldn't help, sorry!..
 
@@ -129,7 +129,7 @@ fizz
 fizz buzz
 ```
 
-## [is_there_a_pair](code/is_there_a_pair.py)
+## [code/is_there_a_pair](code/is_there_a_pair.py)
 
 Given a list of numbers and a value... establish whether the list contains a pair of numbers whose sum equals given value.
 
@@ -154,12 +154,12 @@ Found: 0 pairs
 ```
 
 
-## [longest_lines](code/longest_lines)
+## [code/longest_lines](code/longest_lines)
 
 Mirror, mirror, on the wall, who's the longest of them all?
 
 
-## [show_me_these_primes](code/show_me_these_primes.py)
+## [code/show_me_these_primes](code/show_me_these_primes.py)
 
 Some useful priming. (*useful* as in contrast to say the kind described by Daniel Kahneman in his talk [on Studies on Priming People to The Idea of Money](https://www.youtube.com/watch?v=Oj66YRuSe8Y))
 
@@ -212,12 +212,12 @@ next prime:
 ```
 
 
-## [trailing_string](code/trailing_string)
+## [code/trailing_string](code/trailing_string)
 
 There are two strings: A and B. Hmm... have I seen it already?..
 
 
-## [reverse_text_not_tags](code/reverse_text_not_tags.py)
+## [code/reverse_text_not_tags](code/reverse_text_not_tags.py)
 
 Lets reverse some text, shall we?
 
@@ -233,7 +233,7 @@ Text reversed: >lmth/<>ydob/<>1h/<!em esreveR>1h<>ydob<>daeh/<>daeh<>lmth<
 Text reversed not tags: <html><head></head><body><h1>!em esreveR</h1></body></html>
 ```
 
-## [segmentise_that_sentence](code/segmentise_that_sentence.py)
+## [code/segmentise_that_sentence](code/segmentise_that_sentence.py)
 
 Stomped upon this [little great essay](http://thenoisychannel.com/2011/08/08/retiring-a-great-interview-problem).
 
@@ -245,7 +245,7 @@ $ code/segmentise_that_sentence.py "${sentence// /}" "${sentence}"
 Given an input string and a dictionary of words, segment the input string into a space-separated sequence of dictionary words if possible. For example, if the input string is 'applepie' and dictionary contains a standard set of English words, then we would return the string 'apple pie' as output.
 ```
 
-## [textify_that_list](code/textify_that_list.py)
+## [code/textify_that_list](code/textify_that_list.py)
 
 How about we present list of positive integers as a string specifying continuous
 ranges?
@@ -262,7 +262,7 @@ $ code/textify_that_list.py
 1-3,5,8,13-17
 ```
 
-## [serve_and_track](code/serve_and_track.sh)
+## [code/serve_and_track](code/serve_and_track.sh)
 
 A barebones of a webserver, for some weird reason written BASH.
 
@@ -286,7 +286,7 @@ $ curl 127.0.0.1:8080/ping
 OK
 ```
 
-## [tictactoe](code/tictactoe.py)
+## [code/tictactoe](code/tictactoe.py)
 
 Self indulging `tictactoe` machine following simple rules:
 
@@ -333,7 +333,7 @@ X O O
 Player X wins!..
 ```
 
-## [whos_there](code/whos_there.py)
+## [code/whos_there](code/whos_there.py)
 
 Given service log file display user identifiers.
 

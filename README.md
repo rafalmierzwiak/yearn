@@ -13,6 +13,7 @@ If you're finding yourself curious you may consider picking an item from the lis
 * [fizzbuzz](#fizzbuzz)
 * [is_there_a_pair](#is_there_a_pair)
 * [show_me_these_primes](#show_me_these_primes)
+* [trailing_string](#trailing_string)
 * [reverse_text_not_tags](#reverse_text_not_tags)
 * [segmentise_that_sentence](#segmentise_that_sentence)
 * [textify_that_list](#textify_that_list)
@@ -195,6 +196,12 @@ next prime:
 6: 7
 7: 11
 ```
+
+
+## [trailing_string](code/trailing_string)
+
+There are two strings: A and B. Hmm... have I seen it already?..
+
 
 ## [reverse_text_not_tags](code/reverse_text_not_tags.py)
 

@@ -1,0 +1,6 @@
+<h1>Edit Status</h1>
+
+<form action="/saveStatus" method="POST">
+<div><textarea name="body" rows="8" cols="64">{{printf "%s" .Body}}</textarea></div>
+<div><input type="submit" value="Save"></div>
+</form>

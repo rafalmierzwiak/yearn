@@ -8,6 +8,7 @@ If you're finding yourself curious you may consider picking an item from the lis
 * [anagram_or_not](#anagram_or_not)
 * [hash_me_poorly](#hash_me_poorly)
 * [compare_versions](#compare_versions)
+* [fizzbuzz](#fizzbuzz)
 * [is_there_a_pair](#is_there_a_pair)
 * [show_me_these_primes](#show_me_these_primes)
 * [reverse_text_not_tags](#reverse_text_not_tags)
@@ -87,6 +88,29 @@ exact version installed
 
 $ ./compare_versions.py --operator eq 1.0 1.0 && echo "exact version installed" || echo "different version installed"
 exact version installed
+```
+
+## [fizzbuzz](code/fizzbuzz.py)
+
+Oh boy. This. Really?.. Couldn't help, sorry!..
+
+```
+$ ./fizzbuzz.py 16
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+buzz
+11
+fizz
+13
+14
+fizz buzz
 ```
 
 ## [is_there_a_pair](code/is_there_a_pair.py)

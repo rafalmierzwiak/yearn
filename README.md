@@ -5,11 +5,26 @@ Say I hear or read about something... and for whatever reason it stays with me..
 If you're finding yourself curious you may consider picking an item from the list below, glancing over the brief and maybe even clicking on the header to see the code itself.
 
 <!-- vim-markdown-toc GFM -->
+* [anagram_or_not](#anagram_or_not)
 * [hash_me_poorly](#hash_me_poorly)
 * [is_there_a_pair](#is_there_a_pair)
 * [reverse_text_not_tags](#reverse_text_not_tags)
 
 <!-- vim-markdown-toc -->
+
+## [anagram_or_not](code/anagram_or_not.py)
+
+Anagram or not?.. that's the question!
+
+```
+$ code/anagram_or_not.py
+Is '' anagram of 'abc'? No!
+Is 'abcde' anagram of ''? No!
+Is 'abcde' anagram of 'vwxyz'? No!
+Is 'abcde' anagram of 'abcde'? Yes!
+Is 'abcde' anagram of 'edcba'? Yes!
+Is 'edcba' anagram of 'abcde'? Yes!
+```
 
 ## [hash_me_poorly](code/hash_me_poorly.py)
 

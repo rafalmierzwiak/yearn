@@ -11,6 +11,7 @@ If you're finding yourself curious you may consider picking an item from the lis
 * [show_me_these_primes](#show_me_these_primes)
 * [reverse_text_not_tags](#reverse_text_not_tags)
 * [textify_that_list](#textify_that_list)
+* [whos_there](#whos_there)
 
 <!-- vim-markdown-toc -->
 
@@ -148,4 +149,13 @@ $ code/textify_that_list.py
 1-2,4,8
 1-2,4,8
 1-3,5,8,13-17
+```
+
+## [whos_there](code/whos_there.py)
+
+Given service log file display user identifiers.
+
+```
+$ ./whos_there.py
+User id(s): ['8', '123', '456', '789', 'abc', 'def']
 ```

@@ -13,12 +13,12 @@ class PoorHash:
     """
 
     def __delitem__(self, key):
-        bi, ii = self.__slotindex__(key), self.__itemindex__(key)
-        del self.items[bi][ii]
+        si, ii = self.__slotindex__(key), self.__itemindex__(key)
+        del self.items[si][ii]
 
     def __getitem__(self, key):
-        bi, ii = self.__slotindex__(key), self.__itemindex__(key)
-        return self.items[bi][ii].value
+        si, ii = self.__slotindex__(key), self.__itemindex__(key)
+        return self.items[si][ii].value
 
     def __getslot__(self, key):
         return self.items[self.__slotindex__(key)]

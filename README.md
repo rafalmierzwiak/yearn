@@ -12,7 +12,7 @@ If you're finding yourself curious you may consider picking an item from the lis
 * [show_me_these_primes](#show_me_these_primes)
 * [reverse_text_not_tags](#reverse_text_not_tags)
 * [textify_that_list](#textify_that_list)
-* [track_my_requests](#track_my_requests)
+* [serve_and_track](#serve_and_track)
 * [whos_there](#whos_there)
 
 <!-- vim-markdown-toc -->
@@ -197,7 +197,7 @@ $ code/textify_that_list.py
 1-3,5,8,13-17
 ```
 
-## [track_my_requests](code/track_my_requests.sh)
+## [serve_and_track](code/serve_and_track.sh)
 
 A barebones of a webserver, for some weird reason written BASH.
 
@@ -207,12 +207,16 @@ Barely functional but capable enough to handle the following:
   * /status - will respond with HTTP 200 if /tmp/service_status exists and with HTTP 503 otherwise
   * (other) - will respond with 501 not implemented
 
-```
-# console 1
-$ ./track_my_requests.sh
-127.0.0.1 - - [10/Aug/2017:22:38:16 +0000] "GET /ping HTTP/1.1" 200
+* server
 
-# console 2
+```
+$ ./serve_and_track.sh
+127.0.0.1 - - [10/Aug/2017:22:38:16 +0000] "GET /ping HTTP/1.1" 200
+```
+
+* client
+
+```
 $ curl 127.0.0.1:8080/ping
 OK
 ```

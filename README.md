@@ -7,6 +7,7 @@ If you're finding yourself curious you may consider picking an item from the lis
 <!-- vim-markdown-toc GFM -->
 * [anagram_or_not](#anagram_or_not)
 * [hash_me_poorly](#hash_me_poorly)
+* [compare_versions](#compare_versions)
 * [is_there_a_pair](#is_there_a_pair)
 * [show_me_these_primes](#show_me_these_primes)
 * [reverse_text_not_tags](#reverse_text_not_tags)
@@ -40,6 +41,50 @@ Item 0 is 0
 Item 1 is 1
 Item 1022 is 1022
 Item 1023 is 1023
+```
+
+
+## [compare_versions](code/compare_versions.py)
+
+Compare two version numbers version1 and version2:
+
+* If version1 > version2 return 1
+* If version1 < version2 return -1
+* Otherwise return 0.
+
+Here is an example of version numbers ordering: *0.1 < 1.1 < 1.2 < 1.13 < 1.13.4*.
+
+Allow to use custom comparison operators such as 'eq', 'lt', 'gt':
+* If version1 *operator* version2 exit with 0
+* Othewise exit with 1
+
+```
+$ ./compare_versions.py 1.0 1.1
+-1
+
+$ ./compare_versions.py 1.0 1.0
+0
+
+$ ./compare_versions.py 1.1 1.0
+1
+
+$ ./compare_versions.py --verbose 1.0 1.0
+Comparing version numbers 1.0 and 1.0, comparison result: 0
+
+$ ./compare_versions.py --verbose --operator eq 1.0 1.0
+1.0 eq 1.0 True
+
+$ ./compare_versions.py --operator ge 1.0 1.0 && echo "no update needed" || echo "update recommended"
+no update needed
+
+$ ./compare_versions.py --operator ge 1.0 1.1 && echo "no update needed" || echo "update recommended"
+update recommended
+
+$ ./compare_versions.py --operator eq 1.0 1.0 && echo "exact version installed" || echo "different version installed"
+exact version installed
+
+$ ./compare_versions.py --operator eq 1.0 1.0 && echo "exact version installed" || echo "different version installed"
+exact version installed
 ```
 
 ## [is_there_a_pair](code/is_there_a_pair.py)

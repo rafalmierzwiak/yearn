@@ -4,6 +4,7 @@ from __future__ import print_function
 
 
 def reverse(text):
+    """Reverse text, diy as if slicing notation didn't exist."""
     def _(text):
         for i in range(len(text)-1, -1, -1):
             yield text[i]
@@ -11,6 +12,7 @@ def reverse(text):
 
 
 def reverse_text_not_tags(text, tag_open='<', tag_close='>'):
+    """Reverse text only, leave tags intact."""
     def _(text):
         i = 0
         while i < len(text):

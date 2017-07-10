@@ -4,31 +4,33 @@ from __future__ import print_function
 
 
 def reverse(s):
-    return ''.join([s[i-1]
-                    for i in range(len(s), 0, -1)])
+    def _(s):
+        for i in range(len(s)-1, -1, -1):
+            yield s[i]
+    return ''.join(_(s))
 
 
 def reverse_text_not_tags(s, o='<', c='>'):
-    i = 0
-    tokens = []
-    while i < len(s):
-        j = s[i:].find(o)
-        if j == -1:
-            tokens.append(reverse(s[i:]))
-            break
-        elif j == 0:
-            k = s[i+j:].find(c)
-            if k == -1:
-                tokens.append(s[i+j:])
+    def _(s):
+        i = 0
+        while i < len(s):
+            j = s.find(o, i)
+            if j == -1:
+                yield reverse(s[i:])
                 break
+            elif j == i:
+                k = s.find(c, j)
+                if k == -1:
+                    yield s[i:j]
+                    break
+                else:
+                    k += 1
+                    yield s[i:k]
+                    i = k
             else:
-                k += 1
-                tokens.append(s[i+j:i+j+k])
-                i += j + k
-        else:
-            tokens.append(reverse(s[i:i+j]))
-            i += j
-    return ''.join(tokens)
+                yield reverse(s[i:j])
+                i = j
+    return ''.join(_(s))
 
 
 for text in ['Reverse me!',

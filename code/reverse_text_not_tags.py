@@ -3,34 +3,34 @@
 from __future__ import print_function
 
 
-def reverse(s):
-    def _(s):
-        for i in range(len(s)-1, -1, -1):
-            yield s[i]
-    return ''.join(_(s))
+def reverse(text):
+    def _(text):
+        for i in range(len(text)-1, -1, -1):
+            yield text[i]
+    return ''.join(_(text))
 
 
-def reverse_text_not_tags(s, o='<', c='>'):
-    def _(s):
+def reverse_text_not_tags(text, tag_open='<', tag_close='>'):
+    def _(text):
         i = 0
-        while i < len(s):
-            j = s.find(o, i)
-            if j == -1:
-                yield reverse(s[i:])
+        while i < len(text):
+            tag_start = text.find(tag_open, i)
+            if tag_start == -1:
+                yield reverse(text[i:])
                 break
-            elif j == i:
-                k = s.find(c, j)
-                if k == -1:
-                    yield s[i:j]
+            elif tag_start == i:
+                tag_end = text.find(tag_close, tag_start)
+                if tag_end == -1:
+                    yield text[i:tag_start]
                     break
                 else:
-                    k += 1
-                    yield s[i:k]
-                    i = k
+                    tag_end += 1
+                    yield text[i:tag_end]
+                    i = tag_end
             else:
-                yield reverse(s[i:j])
-                i = j
-    return ''.join(_(s))
+                yield reverse(text[i:tag_start])
+                i = tag_start
+    return ''.join(_(text))
 
 
 for text in ['Reverse me!',

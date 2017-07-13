@@ -3,10 +3,24 @@
 Say I hear or read about something... and for whatever reason it stays with me... won't go away... for to put the compulsion to rest... I code.
 
 <!-- vim-markdown-toc GFM -->
+* [hash_me_poorly](#hash_me_poorly)
 * [is_there_a_pair](#is_there_a_pair)
 * [reverse_text_not_tags](#reverse_text_not_tags)
 
 <!-- vim-markdown-toc -->
+
+## [hash_me_poorly](code/hash_me_poorly.py)
+
+Show me that hash, will ya?..
+
+```
+$ code/hash_me_poorly.py | grep -v len=0
+No of items: 1024
+Item 0 is 0
+Item 1 is 1
+Item 1022 is 1022
+Item 1023 is 1023
+```
 
 ## [is_there_a_pair](code/is_there_a_pair.py)
 

@@ -7,6 +7,7 @@ Say I hear or read about something... and for whatever reason it stays with me..
 * [hash_me_poorly](#hash_me_poorly)
 * [is_there_a_pair](#is_there_a_pair)
 * [reverse_text_not_tags](#reverse_text_not_tags)
+* [textify_that_list](#textify_that_list)
 
 <!-- vim-markdown-toc -->
 
@@ -75,4 +76,21 @@ Text reversed not tags: !em esreveR
 Text: <html><head></head><body><h1>Reverse me!</h1></body></html>
 Text reversed: >lmth/<>ydob/<>1h/<!em esreveR>1h<>ydob<>daeh/<>daeh<>lmth<
 Text reversed not tags: <html><head></head><body><h1>!em esreveR</h1></body></html>
+```
+
+## [textify_that_list](code/textify_that_list.py)
+
+How about we present list of positive integers as a string specifying continuous
+ranges?
+
+```
+$ code/textify_that_list.py
+1
+1
+1-2
+1-2
+1,4-5,8
+1-2,4,8
+1-2,4,8
+1-3,5,8,13-17
 ```

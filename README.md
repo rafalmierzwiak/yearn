@@ -4,6 +4,7 @@ Say I hear or read about something... and for whatever reason it stays with me..
 
 <!-- vim-markdown-toc GFM -->
 
+* [array_absurdity](#array_absurdity)
 * [anagram_or_not](#anagram_or_not)
 * [double_squares](#double_squares)
 * [hash_me_poorly](#hash_me_poorly)
@@ -20,6 +21,11 @@ Say I hear or read about something... and for whatever reason it stays with me..
 * [whos_there](#whos_there)
 
 <!-- vim-markdown-toc -->
+
+## [array_absurdity](code/array_absurdity)
+
+A doppelganger?.. Seriously?
+
 
 ## [anagram_or_not](code/anagram_or_not.py)
 

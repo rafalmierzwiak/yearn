@@ -3,7 +3,9 @@
 Say I hear or read about something... and for whatever reason it stays with me... won't go away... for to put the compulsion to rest... I code.
 
 <!-- vim-markdown-toc GFM -->
+
 * [anagram_or_not](#anagram_or_not)
+* [double_squares](#double_squares)
 * [hash_me_poorly](#hash_me_poorly)
 * [compare_versions](#compare_versions)
 * [fizzbuzz](#fizzbuzz)
@@ -30,6 +32,11 @@ Is 'abcde' anagram of 'abcde'? Yes!
 Is 'abcde' anagram of 'edcba'? Yes!
 Is 'edcba' anagram of 'abcde'? Yes!
 ```
+
+## [double_squares](code/double_squares)
+
+Given X, determine the number of ways in which it can be written as the sum of two squares.
+
 
 ## [hash_me_poorly](code/hash_me_poorly.py)
 
